@@ -1,3 +1,9 @@
-export async function callGemini(prompt: string) {
-  return "Gemini is temporarily disabled.";
+export async function createExhibitionChat() {
+  return {
+    async sendMessage(message: string) {
+      return {
+        text: "AI is temporarily disabled. Deployment successful."
+      };
+    }
+  };
 }
